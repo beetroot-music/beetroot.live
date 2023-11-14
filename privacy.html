@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beetroot - Privacy Policy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;700&family=Syne:wght@400;500;600;700;753;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Privacy Policy</h1>
+        <p>Updated on 15/11/2023.</p>
+
+        <h2>What we store</h2>
+        <ul>
+            <li>IP Address of clients using the services</li>
+            <li>User Agent of clients using the services</li>
+            <li>Metadata regarding relay wire communications. Such as:</li>
+            <ul>
+                <li>Your party's "host name."</li>
+                <li>Track identifiers, metadata and art.</li>
+            </ul>
+        </ul>
+
+        <p>The above details are deleted automatically after 90 days (or earlier depending on service refreshes).</p>
+
+        <h2>Your Rights</h2>
+        <ul>
+            <li>You can request your information to be deleted.</li>
+        </ul>
+
+        <h2>Further Updates</h2>
+        <p>This privacy policy covers the state of the platform during the <code>edev</code> development milestone.</p>
+        <p>This will change without notice as Public Beta Access opens.</p>
+
+        <h2>Any Questions?</h2>
+        <p>If you have any questions regarding this privacy policy, reach out to:</p>
+        <blockquote>
+            Raresh Nistor<br>
+            <a id="posta">raresh+beetroot (arond) nistor (punct) email</a>
+        </blockquote>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            const posta = document.getElementById("posta");
+            const adresa = posta.innerText.replace(" (arond) ", "@").replace(" (punct) ", ".");
+
+            posta.innerText = adresa;
+            posta.setAttribute("href", `mailto:${adresa}?subject=Privacy%20Policy`);
+        }, 1000);
+    </script>
+</body>
+
+</html>
